@@ -10,6 +10,8 @@ import AssignedProject from './pages/AssignedProject';
 import AssignedTasks from './pages/YourTasks';
 import PublicProjectTracking from './pages/PublicProject';
 import ReportsPage from './pages/Reports';
+import AdminTreeSpeciesPage from './pages/AdminTreeSpeciesPage';
+import TreeSpeciesPage from './pages/CommunitySpecies';
 
 // Layout component that includes the sidebar and main content
 const Layout = ({ children }) => {
@@ -45,6 +47,8 @@ const App = () => {
                 <Route path="/tasks" element={<Layout><TaskManagement /></Layout>} />
                 <Route path="/assignedproject" element={<Layout><AssignedProject /></Layout>} />
                 <Route path="/assignedtask" element={<Layout><AssignedTasks /></Layout>} />
+                <Route path="/admintreespecies" element={<Layout><AdminTreeSpeciesPage /></Layout>} />
+                <Route path="/treespecies" element={<Layout><TreeSpeciesPage /></Layout>} />
 
             </Routes>
         </Router>
