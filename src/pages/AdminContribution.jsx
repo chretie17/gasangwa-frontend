@@ -223,7 +223,7 @@ const generateCertificate = async (contributor) => {
   pdf.setFontSize(16);
   pdf.setTextColor(27, 94, 32);
   pdf.setFont('times', 'normal');
-  pdf.text('Rwanda Environment Management Authority', pageWidth / 2, 35, { align: 'center' });
+  pdf.text('RWANDA FORESTRY AUTHORITY', pageWidth / 2, 35, { align: 'center' });
   
   // Decorative line under header
   pdf.setDrawColor(184, 134, 11);
@@ -299,9 +299,6 @@ const generateCertificate = async (contributor) => {
   const sealX = signatureX - 15;
   const sealY = signatureY - -15;
   
- 
- 
-  
   // Seal text
  try {
   pdf.setGState(pdf.GState({ opacity: 0.6 })); // Set opacity to 60%
@@ -316,12 +313,12 @@ const generateCertificate = async (contributor) => {
   pdf.setFontSize(12);
   pdf.setTextColor(27, 94, 32);
   pdf.setFont('times', 'bold');
-  pdf.text('Juliet Kabera', signatureX + 40, signatureY + 8, { align: 'center' });
+  pdf.text('GASANGWA Cedrick', signatureX + 40, signatureY + 8, { align: 'center' });
   
   pdf.setFontSize(10);
   pdf.setTextColor(80, 80, 80);
   pdf.setFont('times', 'normal');
-  pdf.text('Director General, REMA', signatureX + 40, signatureY + 16, { align: 'center' });
+  pdf.text('Director General, RFA', signatureX + 40, signatureY + 16, { align: 'center' });
 
   // Certificate number (professional touch)
   pdf.setFontSize(8);
