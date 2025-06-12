@@ -40,19 +40,23 @@ const Sidebar = () => {
             { path: '/users', label: 'Manage Users', icon: <Users /> },
             { path: '/projects', label: 'Projects', icon: <FolderKanban /> },
             { path: '/admintreespecies', label: 'Tree Species', icon: <TreeDeciduous /> },
+            { path: '/admincontributions', label: 'Contributions', icon: <Leaf /> },
             { path: '/tasks', label: 'Tasks', icon: <CheckSquare /> },
             { path: '/reports', label: 'Reports', icon: <Flag /> }
         ],
-        engineer: [
+        manager: [
             { path: '/dashboard', label: 'Dashboard', icon: <LayoutDashboard /> },
             { path: '/projects', label: 'Projects', icon: <FolderKanban /> },
+            { path: '/admintreespecies', label: 'Tree Species', icon: <TreeDeciduous /> },
+            { path: '/admincontributions', label: 'Contributions', icon: <Leaf /> },
             { path: '/tasks', label: 'Tasks', icon: <CheckSquare /> }
         ],
         member: [
             { path: '/dashboard', label: 'Dashboard', icon: <LayoutDashboard /> },
             { path: '/treespecies', label: 'Tree Species', icon: <TreeDeciduous /> },
             { path: '/assignedproject', label: 'Your Projects', icon: <FolderKanban /> },
-            { path: '/assignedtask', label: 'Your Tasks', icon: <CheckSquare /> }
+            { path: '/assignedtask', label: 'Your Tasks', icon: <CheckSquare /> },
+            { path: '/usercontributions', label: 'Your Contributions', icon: <Leaf /> }
         ]
     };
 

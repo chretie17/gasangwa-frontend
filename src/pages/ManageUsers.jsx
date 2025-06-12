@@ -127,7 +127,7 @@ const ManageUsers = () => {
                                         <td className="px-6 py-4">
                                             <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium
                                                 ${user.role === 'admin' ? 'bg-purple-100 text-purple-800' : 
-                                                  user.role === 'engineer' ? 'bg-blue-100 text-blue-800' : 
+                                                  user.role === 'manager' ? 'bg-blue-100 text-blue-800' : 
                                                   'bg-green-100 text-green-800'}`}>
                                                 {user.role}
                                             </span>
@@ -211,7 +211,7 @@ const ManageUsers = () => {
                                     className="w-full px-4 py-2 rounded-lg bg-gray-50 border border-gray-200 focus:border-orange-500 focus:bg-white focus:ring-2 focus:ring-orange-200 transition-all duration-200 outline-none"
                                 >
                                     <option value="member">Member</option>
-                                    <option value="engineer">Engineer</option>
+                                    <option value="manager">Manager</option>
                                     <option value="admin">Admin</option>
                                 </select>
                             </div>

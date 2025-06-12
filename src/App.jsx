@@ -12,6 +12,8 @@ import PublicProjectTracking from './pages/PublicProject';
 import ReportsPage from './pages/Reports';
 import AdminTreeSpeciesPage from './pages/AdminTreeSpeciesPage';
 import TreeSpeciesPage from './pages/CommunitySpecies';
+import UserContributionsPage from './pages/UserContributions';
+import AdminContributionsPage from './pages/AdminContribution';
 
 // Layout component that includes the sidebar and main content
 const Layout = ({ children }) => {
@@ -49,6 +51,9 @@ const App = () => {
                 <Route path="/assignedtask" element={<Layout><AssignedTasks /></Layout>} />
                 <Route path="/admintreespecies" element={<Layout><AdminTreeSpeciesPage /></Layout>} />
                 <Route path="/treespecies" element={<Layout><TreeSpeciesPage /></Layout>} />
+                <Route path="/usercontributions" element={<Layout><UserContributionsPage /></Layout>} />
+                <Route path="*" element={<Navigate to="/login" />} /> {/* Redirect any unknown routes to login */}
+                <Route path="/admincontributions" element={<Layout><AdminContributionsPage /></Layout>} />
 
             </Routes>
         </Router>
